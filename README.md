@@ -1,16 +1,66 @@
-# React + Vite
+# GameHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameHub is a modern, responsive web application where users can explore games, authenticate securely, and manage their profiles. It features a clean UI, smooth animations, and a full authentication system powered by Firebase. The project is built using React, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live URL
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The purpose of GameHub is to provide an interactive and polished platform for users to browse game content while offering secure user authentication, a user-friendly profile system, and an overall engaging experience. The project demonstrates the use of modern frontend technologies, API handling, authentication flows, and component-based architecture.
+
+---
+
+## Key Features
+
+### 🔐 Authentication System
+- Login with Email and Password  
+- Login using Google  
+- Login using GitHub  
+- Logout functionality  
+- Password reset via email  
+- Email auto-fill from login to reset page  
+- Fully handled via Firebase Auth  
+- Global auth state using React Context  
+
+### 👤 Profile Management
+- Display user details:
+  - Profile image
+  - Display name
+  - Email
+- Update profile:
+  - Change display name
+  - Update profile photo URL
+- Sign Out directly from the Profile page
+
+
+### 🧭 Navigation
+- Conditional Navbar:
+  - Logged-out users see “Login”
+  - Logged-in users see profile image or a “Profile” label
+- Routing managed using React Router DOM
+- Smooth animations via Motion
+
+### 🎨 UI/UX
+- Tailwind CSS for fast, responsive styling  
+- Reusable components  
+- Mobile-friendly layouts  
+- Toast notifications for feedback  
+
+---
+
+## Technologies & NPM Packages Used
+
+- React  
+- React Router DOM – Client-side routing  
+- Tailwind CSS – Utility-first styling  
+- Motion – Animations    
+- React Toastify – Toast message UI  
+- Firebase – Authentication system  
+
+# Start development server
+npm run dev
