@@ -5,7 +5,7 @@ GameHub is a modern, responsive web application where users can explore games, a
 ---
 
 ## Live URL
-
+https://gamehub-jahid.netlify.app/
 
 ---
 
