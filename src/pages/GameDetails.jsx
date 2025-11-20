@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Title from '../hooks/Title';
+import Motion from '../components/Motion';
 
 const GameDetails = () => {
     const [games, setGames] = useState([]);
@@ -20,9 +22,13 @@ const GameDetails = () => {
             });
     }, []);
 
+    Title("Game Details | Gamehub")
+
     return (
         <div className="min-h-screen bg-black text-white px-4 py-10">
-            <div className="max-w-6xl mx-auto">
+            <Motion>
+
+                <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-2">
                     Game <span className="text-red-500">Details</span>
                 </h2>
@@ -96,7 +102,9 @@ const GameDetails = () => {
                         ))}
                     </div>
                 )}
-            </div>
+                </div>
+
+            </Motion>
         </div>
     );
 };

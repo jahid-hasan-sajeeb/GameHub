@@ -27,8 +27,8 @@ const PopularGames = () => {
         .sort((a, b) => parseFloat(b.ratings) - parseFloat(a.ratings))
         .slice(0, 3);
 
-    const handleCardClick = (id) => {
-        navigate(`/games/${id}`);
+    const handleCardClick = () => {
+        navigate(`/game-details`);
     };
 
     return (
@@ -57,7 +57,6 @@ const PopularGames = () => {
                                 onClick={() => handleCardClick(game.id)}
                                 className="bg-zinc-900 border border-gray-800 rounded-2xl p-4 shadow-md cursor-pointer hover:border-red-500 hover:-translate-y-1 transition-all duration-200 flex flex-col"
                             >
-                                {/* Cover */}
                                 <div className="w-full h-40 bg-zinc-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center">
                                     {game.coverPhoto ? (
                                         <img
@@ -77,7 +76,7 @@ const PopularGames = () => {
                                     {game.title}
                                 </h3>
 
-                                {/* Meta */}
+                       
                                 <p className="text-xs text-gray-400 mb-1">
                                     Category: <span className="text-gray-200">{game.category}</span>
                                 </p>
@@ -85,7 +84,7 @@ const PopularGames = () => {
                                     Rating: <span className="text-yellow-400">{game.ratings}</span> / 5
                                 </p>
 
-                                {/* Short description */}
+                               
                                 <p className="text-sm text-gray-300 mb-4 line-clamp-3">
                                     {game.description}
                                 </p>

@@ -11,7 +11,7 @@ const Newsletter = () => {
     return (
         <section className="bg-zinc-900 border-t border-gray-800 px-4 py-16 my-10">
             <div className="max-w-3xl mx-auto text-center">
-                {/* Heading */}
+              
                 <h2 className="text-3xl font-bold text-white mb-2">
                     Join the <span className="text-red-500">GameHub</span> Newsletter
                 </h2>

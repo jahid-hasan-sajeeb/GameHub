@@ -1,10 +1,18 @@
 import React from 'react';
+import Title from '../hooks/Title';
+import Motion from '../components/Motion';
+
 
 const AboutUs = () => {
 
+  Title("About Us | Gamehub");
+
   return (
+
     <main className="bg-black text-gray-300">
-      {/* Hero */}
+      
+      <Motion>
+
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white">
           About <span className="text-red-500">GameHub</span>
@@ -15,7 +23,6 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* Mission / What we do */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pb-10">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl border border-gray-800 bg-zinc-950 p-6">
@@ -40,7 +47,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Quick stats */}
       <section className="border-y border-gray-800 bg-zinc-950/50">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-10 grid gap-6 sm:grid-cols-3 text-center">
           <div>
@@ -108,6 +114,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+
+      </Motion>
     </main>
   );
 };

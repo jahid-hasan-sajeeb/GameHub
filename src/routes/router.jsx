@@ -8,6 +8,10 @@ import Login from '../pages/Login'
 import Error from '../pages/Error';
 import GameDetails from '../pages/GameDetails';
 import GameUpdates from '../pages/GameUpdates';
+import PrivateRoute from '../privateRoute/PrivateRoute';
+import ForgetPass from '../pages/ForgetPass';
+import Profile from '../pages/Profile';
+
 
 const router = createBrowserRouter([
     {
@@ -21,6 +25,16 @@ const router = createBrowserRouter([
             {
                 path: "/home",
                 element: <Home></Home>
+            },
+            {
+                path: "forget-password",
+                element: <ForgetPass></ForgetPass>
+            },
+            {
+                path: "/profile",
+                element: <PrivateRoute>
+                    <Profile></Profile>
+                </PrivateRoute>
             },
             {
                 path: "/login",
@@ -40,7 +54,9 @@ const router = createBrowserRouter([
             },
             {
                 path: "game-details",
-                element: <GameDetails></GameDetails>
+                element: <PrivateRoute>
+                    <GameDetails></GameDetails>
+                </PrivateRoute>
             },
             {
                 path: "game-updates",

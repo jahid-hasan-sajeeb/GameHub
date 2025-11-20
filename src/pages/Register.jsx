@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { auth } from '../firebase/firebase.config';
 import {FaEye, FaEyeSlash} from 'react-icons/fa';
+import Title from '../hooks/Title';
+import Motion from '../components/Motion';
 
 const Register = () => {
+    Title("Register | Gamehub")
     const [show, setShow] = useState(false);
 
     const handleSignUp = (e) => {
@@ -50,7 +53,9 @@ const Register = () => {
 
     return (
         <div className="min-h-screen bg-black flex items-center justify-center px-4">
-            <div className="bg-zinc-900 w-full max-w-md p-8 rounded-2xl shadow-lg border border-gray-800">
+            <Motion>
+
+                <div className="bg-zinc-900 w-full max-w-md p-8 rounded-2xl shadow-lg border border-gray-800">
 
                 {/* Title */}
                 <h2 className="text-3xl font-bold text-center text-white mb-2">
@@ -129,24 +134,16 @@ const Register = () => {
                     <hr className="h-px w-26 border-gray-700" />
                 </div>
 
-                {/* Login through Google */}
-                <button className="w-full bg-white text-gray-800 py-2 rounded-md font-semibold hover:bg-gray-100 transition-all duration-300 flex justify-center items-center gap-2">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                        alt="Google"
-                        className="w-5 h-5"
-                    />
-                    Continue with Google
-                </button>
-
                 {/* Login Redirection */}
-                <p className="text-gray-400 text-sm text-center mt-6">
+                <p className="text-gray-400 text-base text-center mt-6">
                     Already have an account?{" "}
                     <Link to="/login" className="text-red-500 hover:underline">
                         Login here
                     </Link>
                 </p>
-            </div>
+                </div>
+                
+            </Motion>
         </div>
     );
 };

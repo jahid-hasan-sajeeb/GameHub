@@ -1,4 +1,6 @@
 import React from 'react';
+import Title from '../hooks/Title';
+import Motion from '../components/Motion';
 
 const newsArticles = [
     {
@@ -7,7 +9,7 @@ const newsArticles = [
         game: "PUBG Mobile",
         category: "Update",
         date: "Nov 18, 2025",
-        coverPhoto: "https://example.com/images/pubg-update.jpg",
+        coverPhoto: "https://tse1.mm.bing.net/th/id/OIP.jarFwnq8wAOMNzXVyI5YQwHaD4?rs=1&pid=ImgDetMain&o=7&rm=3",
         description:
             "The latest PUBG Mobile season introduces a revamped battle pass, balance changes, and visual updates across multiple classic maps.",
         link: "#"
@@ -18,7 +20,7 @@ const newsArticles = [
         game: "Genshin Impact",
         category: "Announcement",
         date: "Nov 15, 2025",
-        coverPhoto: "https://example.com/images/genshin-region.jpg",
+        coverPhoto: "https://tse3.mm.bing.net/th/id/OIP.1dVimxHNjwXspdbZfCr3oAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
         description:
             "HoYoverse teases a new region with unique enemies, puzzles, and elemental reactions, along with several highly anticipated characters.",
         link: "#"
@@ -29,7 +31,7 @@ const newsArticles = [
         game: "Call of Duty Mobile",
         category: "Esports",
         date: "Nov 10, 2025",
-        coverPhoto: "https://example.com/images/codm-esports.jpg",
+        coverPhoto: "https://th.bing.com/th/id/OIP.OE7kxixu-7rdV_pmWUT7EgHaEK?w=226&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         description:
             "Top teams clashed in an intense grand final, showcasing insane plays, clutch moments, and a surprising underdog victory.",
         link: "#"
@@ -40,7 +42,7 @@ const newsArticles = [
         game: "Free Fire",
         category: "Update",
         date: "Nov 08, 2025",
-        coverPhoto: "https://example.com/images/freefire-mode.jpg",
+        coverPhoto: "https://th.bing.com/th/id/OIP.8POGTuNydLE6vtQZL6kkVgHaEK?w=328&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         description:
             "Garena rolls out a new limited-time mode focused on high-speed combat, along with fresh skins and ranked season rewards.",
         link: "#"
@@ -51,7 +53,7 @@ const newsArticles = [
         game: "Pixel Rogue",
         category: "Indie",
         date: "Nov 05, 2025",
-        coverPhoto: "https://example.com/images/pixel-rogue.jpg",
+        coverPhoto: "https://th.bing.com/th/id/OIP.QbGLZotqxIkuN51tj-mAFgHaEK?w=309&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
         description:
             "Pixel Rogue blends retro aesthetics with modern combat mechanics, offering deep builds, randomized levels, and co-op support.",
         link: "#"
@@ -59,17 +61,21 @@ const newsArticles = [
 ];
 
 const GameUpdates = () => {
+
+    Title("Articles | Gamehub")
+
+
     return (
         <div className="min-h-screen bg-black text-white px-4 py-10">
-            <div className="max-w-6xl mx-auto">
+            <Motion>
+                <div className="max-w-6xl mx-auto">
 
-                {/* Header */}
                 <header className="mb-8 text-center">
                     <h1 className="text-3xl md:text-4xl font-bold mb-2">
                         GameHub <span className="text-red-500">Articles</span>
                     </h1>
                     <p className="text-gray-400 text-sm md:text-base">
-                        All the latest updates from PUBG Mobile.
+                        All the latest updates of gaming world.
                     </p>
                 </header>
 
@@ -79,7 +85,7 @@ const GameUpdates = () => {
                             key={article.id}
                             className="grid md:grid-cols-2 gap-6 bg-zinc-900 border border-gray-800 rounded-2xl p-5 shadow-lg"
                         >
-                            <div className="w-full h-56 md:h-full bg-zinc-800 rounded-xl overflow-hidden flex items-center justify-center">
+                            <div className="w-full h-64 bg-zinc-800 rounded-xl overflow-hidden flex items-center justify-center">
                                 {article.coverPhoto ? (
                                     <img
                                         src={article.coverPhoto}
@@ -123,7 +129,8 @@ const GameUpdates = () => {
                     ))}
                 </section>
 
-            </div>
+                </div>
+            </Motion>    
         </div>
     );
 };
