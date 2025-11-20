@@ -58,7 +58,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mini team / values row (optional, simple) */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-12">
         <h2 className="text-2xl font-bold text-white">Built by Gamers</h2>
         <p className="mt-2 text-sm text-gray-400 max-w-3xl">
@@ -67,7 +66,6 @@ const AboutUs = () => {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-4">
-          {/* Placeholder avatars (replace with real team later) */}
           <img
             className="h-12 w-12 rounded-full border border-gray-700"
             src="https://api.dicebear.com/7.x/identicon/svg?seed=PlayerOne"
@@ -86,7 +84,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pb-16">
         <div className="rounded-2xl border border-gray-800 bg-linear-to-r from-zinc-950 to-black p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>

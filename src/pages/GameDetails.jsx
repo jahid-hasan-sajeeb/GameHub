@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-const PopularGames = () => {
+const GameDetails = () => {
     const [games, setGames] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('/gameData.json')
@@ -22,40 +20,34 @@ const PopularGames = () => {
             });
     }, []);
 
-    // sorted by rating
-    const popularGames = [...games]
-        .sort((a, b) => parseFloat(b.ratings) - parseFloat(a.ratings))
-        .slice(0, 3);
-
-    const handleCardClick = (id) => {
-        navigate(`/games/${id}`);
-    };
-
     return (
-        <div className="bg-black text-white px-4 py-10 mt-8">
+        <div className="min-h-screen bg-black text-white px-4 py-10">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold mb-2">
-                    Popular <span className="text-red-500">Games</span>
+                <h2 className="text-3xl font-bold text-center mb-2">
+                    Game <span className="text-red-500">Details</span>
                 </h2>
-                <p className="text-gray-400 mb-6">
-                    Top rated games from our collection
+                <p className="text-gray-400 text-center mb-8">
+                    Explore the available games in GameHub
                 </p>
 
                 {loading && (
-                    <p className="text-gray-400 text-sm">Loading games...</p>
+                    <p className="text-center text-gray-400">
+                        Loading games...
+                    </p>
                 )}
 
                 {error && (
-                    <p className="text-red-500 text-sm">{error}</p>
+                    <p className="text-center text-red-500">
+                        {error}
+                    </p>
                 )}
 
                 {!loading && !error && (
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {popularGames.map((game) => (
+                        {games.map((game) => (
                             <div
                                 key={game.id}
-                                onClick={() => handleCardClick(game.id)}
-                                className="bg-zinc-900 border border-gray-800 rounded-2xl p-4 shadow-md cursor-pointer hover:border-red-500 hover:-translate-y-1 transition-all duration-200 flex flex-col"
+                                className="bg-zinc-900 border border-gray-800 rounded-2xl p-4 flex flex-col shadow-md"
                             >
                                 {/* Cover */}
                                 <div className="w-full h-40 bg-zinc-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center">
@@ -73,26 +65,33 @@ const PopularGames = () => {
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-lg font-semibold mb-1 line-clamp-2">
+                                <h3 className="text-lg font-semibold mb-1">
                                     {game.title}
                                 </h3>
 
-                                {/* Meta */}
                                 <p className="text-xs text-gray-400 mb-1">
                                     Category: <span className="text-gray-200">{game.category}</span>
                                 </p>
                                 <p className="text-xs text-gray-400 mb-2">
-                                    Rating: <span className="text-yellow-400">{game.ratings}</span> / 5
+                                    Ratings: <span className="text-gray-200">{game.ratings}</span>
+                                </p>
+                                <p className="text-xs text-gray-400 mb-3">
+                                    Developer: <span className="text-gray-200">{game.developer}</span>
                                 </p>
 
-                                {/* Short description */}
-                                <p className="text-sm text-gray-300 mb-4 line-clamp-3">
+                                {/* Description */}
+                                <p className="text-sm text-gray-300 mb-4">
                                     {game.description}
                                 </p>
 
-                                <span className="mt-auto text-xs text-red-400">
-                                    View details →
-                                </span>
+                                {/* Download */}
+                                <a
+                                    href={game.downloadLink}
+                                    target="_blank"
+                                    className="mt-auto inline-block text-center bg-red-600 hover:bg-red-700 text-white py-2 rounded-md text-sm font-semibold transition-all duration-300"
+                                >
+                                    Download
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -102,4 +101,4 @@ const PopularGames = () => {
     );
 };
 
-export default PopularGames;
+export default GameDetails;

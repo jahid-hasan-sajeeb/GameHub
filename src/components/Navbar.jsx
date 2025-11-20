@@ -16,9 +16,11 @@ const Navbar = () => {
           <li>
             <MyLink to="/">Home</MyLink>
           </li>
-          
           <li>
-            <MyLink to="News">News</MyLink>
+            <MyLink to="Game-Details">Game Details</MyLink>
+          </li>
+          <li>
+            <MyLink to="Game-Updates">Articles</MyLink>
           </li>
           <li>
             <MyLink to="About-Us">About Us</MyLink>
@@ -29,6 +31,7 @@ const Navbar = () => {
           <li>
             <MyLink to="Register">Register</MyLink>
           </li>
+          
         </ul>
       </div>
     </nav>

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground: PUBG",
+    "coverPhoto": "https://example.com/images/pubg.png",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty Mobile",
+    "coverPhoto": "https://example.com/images/codm.png",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "COD Mobile brings intense multiplayer, zombies, and battle royale modes with fast-paced combat.",
+    "ratings": "4.7",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Among Us",
+    "coverPhoto": "https://example.com/images/amongus.png",
+    "category": "Party",
+    "downloadLink": "https://www.innersloth.com/games/among-us/",
+    "description": "A social deduction game where players work together to find the imposter hiding among the crew.",
+    "ratings": "4.3",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "4",
+    "title": "Free Fire",
+    "coverPhoto": "https://example.com/images/freefire.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "Free Fire offers quick 10-minute battle royale matches packed with action and survival mechanics.",
+    "ratings": "4.2",
+    "developer": "Garena"
+  },
+  {
+    "id": "5",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://example.com/images/genshin.png",
+    "category": "Open World RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "A massive open-world action RPG with elemental combat, exploration, and deep storytelling.",
+    "ratings": "4.6",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "6",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://example.com/images/coc.png",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "A strategy game where players build bases, train armies, and battle other clans.",
+    "ratings": "4.4",
+    "developer": "Supercell"
+  },
+  {
+    "id": "7",
+    "title": "Clash Royale",
+    "coverPhoto": "https://example.com/images/clashroyale.png",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashroyale/",
+    "description": "A real-time multiplayer strategy game combining card battles and tower defense.",
+    "ratings": "4.5",
+    "developer": "Supercell"
+  },
+  {
+    "id": "8",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://example.com/images/asphalt9.png",
+    "category": "Racing",
+    "downloadLink": "https://asphaltlegends.com/",
+    "description": "A high-speed racing game featuring real cars, crazy tracks, and cinematic stunts.",
+    "ratings": "4.6",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "9",
+    "title": "Fortnite Mobile",
+    "coverPhoto": "https://example.com/images/fortnite.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite",
+    "description": "A vibrant battle royale game with unique building mechanics and fast-paced action.",
+    "ratings": "4.4",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "10",
+    "title": "Minecraft",
+    "coverPhoto": "https://example.com/images/minecraft.png",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "A creative sandbox game where players explore, build, survive, and create infinite worlds.",
+    "ratings": "4.8",
+    "developer": "Mojang"
+  },
+  {
+    "id": "11",
+    "title": "Valorant Mobile",
+    "coverPhoto": "https://example.com/images/valorant.png",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "A tactical hero-based shooter focusing on precision, strategy, and teamplay.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "12",
+    "title": "League of Legends: Wild Rift",
+    "coverPhoto": "https://example.com/images/wildrift.png",
+    "category": "MOBA",
+    "downloadLink": "https://wildrift.leagueoflegends.com/",
+    "description": "A mobile MOBA based on the classic League of Legends, featuring intense 5v5 battles.",
+    "ratings": "4.5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "13",
+    "title": "Apex Legends Mobile",
+    "coverPhoto": "https://example.com/images/apex.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "A squad-based battle royale game with unique characters and fast movement gameplay.",
+    "ratings": "4.4",
+    "developer": "Electronic Arts"
+  },
+  {
+    "id": "14",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://example.com/images/subway.png",
+    "category": "Casual",
+    "downloadLink": "https://sybogames.com/games/subway-surfers/",
+    "description": "An endless runner game where players dodge trains and obstacles to achieve high scores.",
+    "ratings": "4.3",
+    "developer": "Kiloo"
+  },
+  {
+    "id": "15",
+    "title": "Temple Run 2",
+    "coverPhoto": "https://example.com/images/templerun2.png",
+    "category": "Casual",
+    "downloadLink": "https://imangistudios.com/games/temple-run-2",
+    "description": "A fast-paced endless runner featuring traps, cliffs, mines, and exhilarating escape gameplay.",
+    "ratings": "4.2",
+    "developer": "Imangi Studios"
+  }
+]

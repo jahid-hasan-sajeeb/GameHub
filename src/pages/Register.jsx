@@ -39,7 +39,6 @@ const Register = () => {
 
         createUserWithEmailAndPassword(auth, email, password)
             .then((res) => {
-                // Signed in
                 console.log(res)
                 toast.success("Signup Successful")
             })

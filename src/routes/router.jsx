@@ -6,6 +6,8 @@ import AboutUs from '../pages/AboutUs';
 import Register from '../pages/Register';
 import Login from '../pages/Login'
 import Error from '../pages/Error';
+import GameDetails from '../pages/GameDetails';
+import GameUpdates from '../pages/GameUpdates';
 
 const router = createBrowserRouter([
     {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
             {
                 path: "*",
                 element: <Error></Error>
+            },
+            {
+                path: "game-details",
+                element: <GameDetails></GameDetails>
+            },
+            {
+                path: "game-updates",
+                element: <GameUpdates></GameUpdates>
             }
         ]
     }
