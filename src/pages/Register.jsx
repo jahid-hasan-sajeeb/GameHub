@@ -25,6 +25,18 @@ const Register = () => {
             return;
         }
 
+
+        const firebaseErrorMessages = {
+        "auth/invalid-email": "That email doesn’t look right.",
+        "auth/user-not-found": "No account found with this email.",
+        "auth/wrong-password": "Incorrect password. Try again.",
+        "auth/missing-password": "Please enter your password.",
+        "auth/too-many-requests": "Too many attempts. Take a break.",
+        "auth/network-request-failed": "Network issue. Check your connection.",
+        "auth/user-disabled": "This account has been disabled.",
+        "auth/invalid-credential": "Your email or password is incorrect.",
+    };
+
         createUserWithEmailAndPassword(auth, email, password)
             .then((res) => {
                 // Signed in
@@ -32,7 +44,7 @@ const Register = () => {
                 toast.success("Signup Successful")
             })
             .catch((error) => {
-                const errorMessage = error.message;
+                const errorMessage = firebaseErrorMessages[error.code];
                 toast.error(errorMessage)
             });
     }
